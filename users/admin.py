@@ -4,7 +4,7 @@ from .forms import UserCreationForm, UserChangeForm
 from .models import User
 
 
-class CustomUserAdmin(UserAdmin):
+class UserAdmin(UserAdmin):
     add_form = UserCreationForm
     form = UserChangeForm
     model = User
@@ -16,4 +16,4 @@ class CustomUserAdmin(UserAdmin):
         (None, {'fields': ('full_name', 'phone_number', 'is_phone_confirmed', 'image', 'role', )}),
     )
 
-admin.site.register(User, CustomUserAdmin)
+admin.site.register(User, UserAdmin)
