@@ -1,7 +1,7 @@
 from rest_framework import  serializers
-from .models import Service
+from .models import ServiceType
 
-class ServiceSerializer(serializers.ModelSerializer):
+class ServiceTypeSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Service
+        model = ServiceType
         fields = ['id', 'name', 'created_at', 'updated_at']

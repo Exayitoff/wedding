@@ -1,9 +1,9 @@
 from rest_framework import viewsets
-from .serializers import ServiceSerializer
-from .models import Service
+from .serializers import ServiceTypeSerializer
+from .models import ServiceType
 
 # Create your views here.
 
-class ServiceList(viewsets.ModelViewSet):
-    queryset = Service.objects.all()    
-    serializer_class = ServiceSerializer
+class ServiceTypeList(viewsets.ModelViewSet):
+    queryset = ServiceType.objects.all()    
+    serializer_class = ServiceTypeSerializer
