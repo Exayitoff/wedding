@@ -58,3 +58,6 @@ class User(AbstractUser):
 
     USERNAME_FIELD = 'phone_number'
     
+    
+    def __str__(self):
+        return f'{self.phone_number}'
