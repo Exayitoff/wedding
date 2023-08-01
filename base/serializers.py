@@ -9,4 +9,4 @@ class RegionSerializer(serializers.ModelSerializer):
 class DistrictSerializer(serializers.ModelSerializer):
     class Meta:
         model = District
-        fields = ['id', 'region', 'name', 'created_at', 'updated_at']
+        fields = ['id', 'region_id', 'name', 'created_at', 'updated_at']

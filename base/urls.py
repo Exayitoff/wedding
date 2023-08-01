@@ -2,6 +2,6 @@ from rest_framework.routers import DefaultRouter
 from .views import RegionList, DistrictList
 
 router = DefaultRouter()
-router.register('region', RegionList, basename='region')
-router.register('district', DistrictList, basename='district')
+router.register('regions', RegionList, basename='regions')
+router.register('districts', DistrictList, basename='districts')
 urlpatterns = router.urls

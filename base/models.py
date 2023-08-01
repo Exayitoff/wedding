@@ -21,8 +21,8 @@ class Region(BaseModel):
     
     
 class District(BaseModel):
-    region = models.ForeignKey(Region, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
+    region = models.ForeignKey(Region, on_delete=models.CASCADE, related_name='regions')
     
     def __str__(self):
         return self.name
