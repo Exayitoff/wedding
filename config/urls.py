@@ -18,11 +18,13 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from .yasg import urlpatterns as doc_api
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('service.urls')),
 ]
+urlpatterns += doc_api
 
 
 if settings.DEBUG:
