@@ -42,13 +42,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    'drf_yasg2',
     'base',
     'users',
     'service',
     
+    'drf_yasg2',
     'phonenumber_field',
     'rest_framework',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
