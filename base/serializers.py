@@ -4,9 +4,9 @@ from .models import Region, District
 class RegionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Region
-        fields = ['id', 'name', 'created_at', 'updated_at']
+        fields = "__all__"
         
 class DistrictSerializer(serializers.ModelSerializer):
     class Meta:
         model = District
-        fields = ['id', 'region_id', 'name', 'created_at', 'updated_at']
+        fields = "__all__"

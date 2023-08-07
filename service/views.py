@@ -4,10 +4,10 @@ from .models import ServiceType, Service
 
 # Create your views here.
 
-class ServiceTypeList(viewsets.ModelViewSet):
+class ServiceTypeViewSet(viewsets.ModelViewSet):
     queryset = ServiceType.objects.all()    
     serializer_class = ServiceTypeSerializer
     
-class ServiceList(viewsets.ModelViewSet):
+class ServiceViewSet(viewsets.ModelViewSet):
     queryset = Service.objects.all()
     serializer_class = ServiceSerializer

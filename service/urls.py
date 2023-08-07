@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import ServiceTypeList, ServiceList
+from .views import ServiceTypeViewSet, ServiceViewSet
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
-router.register('service-types', ServiceTypeList, basename='service-types')
-router.register('services', ServiceList, basename='services')
+router.register('service-types', ServiceTypeViewSet, basename='service-types')
+router.register('services', ServiceViewSet, basename='services')
 urlpatterns = router.urls   

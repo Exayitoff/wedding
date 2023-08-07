@@ -4,10 +4,10 @@ from .models import Region, District
 
 # Create your views here.
 
-class RegionList(viewsets.ModelViewSet):
+class RegionViewSet(viewsets.ModelViewSet):
     queryset = Region.objects.all()
     serializer_class = RegionSerializer
     
-class DistrictList(viewsets.ModelViewSet):
+class DistrictViewSet(viewsets.ModelViewSet):
     queryset = District.objects.all()
     serializer_class = DistrictSerializer
