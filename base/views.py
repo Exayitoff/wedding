@@ -6,14 +6,14 @@ from .models import Region, District
 
 # Create your views here.
 
-class RegionList(viewsets.ModelViewSet):
+class RegionViewSet(viewsets.ModelViewSet):
     queryset = Region.objects.all()
     serializer_class = RegionSerializer
     filter_backends = [DjangoFilterBackend, SearchFilter]
     filterset_fields = ['name']
     search_fields = ['name']
     
-class DistrictList(viewsets.ModelViewSet):
+class DistrictViewSet(viewsets.ModelViewSet):
     queryset = District.objects.all()
     serializer_class = DistrictSerializer
     filter_backends = [DjangoFilterBackend, SearchFilter]
